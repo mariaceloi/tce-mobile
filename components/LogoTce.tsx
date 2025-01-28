@@ -5,8 +5,6 @@ function LogoTce(){
     return(
         
         <View style={styles.box}>
-            <View style = {styles.blue}></View>
-            <View style = {styles.green}></View>
 
             <Image source={require('../assets/logoTce.png')}
             resizeMode="cover"
@@ -25,20 +23,10 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems: 'center',
         backgroundColor: '#F5F5F5',
+        
+        width: '100%',
+        height: 51
     },
-
-    blue:{
-        backgroundColor: '#295A9F',
-        width: '100%',
-        height: 45
-    }, 
-
-    green: {
-        backgroundColor: '#059D54',
-        width: '100%',
-        height: 15,
-        marginBottom: 2
-    }
 })
 
 export default LogoTce;
