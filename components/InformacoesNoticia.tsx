@@ -1,25 +1,30 @@
 import { View, Image, StyleSheet, Text, Pressable } from "react-native";
+import { NoticiaInfos } from "../types/noticiaType";
 
-function ComponenteNoticias() {
+
+ type Props = {
+    noticia: NoticiaInfos;
+};
+
+function ComponenteNoticias (props : Props) {
     return (
         <Pressable style={styles.container}>
             <Image
                 source={{
-                    uri: 'https://portal-services.tce.ms.gov.br/portal-services/files/noticia/0b00a54b009a5d47d9e4d120eb8944bf.jpg',
+                    uri: props.noticia.image,
                 }}
                 resizeMode="cover"
                 style={styles.image}
             />
 
             <View style={styles.content}>
-                <Text style={styles.tag}>Contas</Text>
+                <Text style={styles.tag}>{props.noticia.tag}</Text>
                 <Text style={styles.title}>
-                    e-Sfinge completa um mês de lançamento e 95% dos municípios enviam dados com eficiência ao TCE-MS
+                    {props.noticia.title}
                 </Text>
                 <View style={styles.footer}>
-                    <Text style={styles.daysAgo}>Há 2d</Text>
-                    <Text style={styles.releaseDate}>17/03/2023</Text>
-                    <Text></Text>
+                    <Text style={styles.daysAgo}>{props.noticia.daysAgo}</Text>
+                    <Text style={styles.releaseDate}>{props.noticia.releaseDate}</Text>
                 </View>
             </View>
         </Pressable>
@@ -39,7 +44,7 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.1,
         shadowRadius: 4,
-        elevation: 2,
+        elevation: 4,
     },
     image: {
         marginTop: 3,
