@@ -19,6 +19,7 @@ function ComponenteNoticias() {
                 <View style={styles.footer}>
                     <Text style={styles.daysAgo}>Há 2d</Text>
                     <Text style={styles.releaseDate}>17/03/2023</Text>
+                    <Text></Text>
                 </View>
             </View>
         </Pressable>
