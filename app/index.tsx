@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet,} from "react-native";
+import { View, Text, StyleSheet, ScrollView, } from "react-native";
 import LogoTce from "../components/LogoTce";
 import { SafeAreaView } from "react-native-safe-area-context";
 import ImagemDestaque from "../components/imagemDestaqueNoticia";
@@ -8,10 +8,13 @@ import BoxUltimasNoticias from "../components/ultimasNoticias";
 export default function TelaNoticiasInicial() {
     return (
         <SafeAreaView style={styles.container}>
-            <LogoTce />
-            <ImagemDestaque />
-            <BoxUltimasNoticias />
-            <CardNoticia/>
+ 
+            <ScrollView>
+                <LogoTce />
+                <ImagemDestaque />
+                <BoxUltimasNoticias />
+                <CardNoticia />
+            </ScrollView>
         </SafeAreaView>
     );
 }

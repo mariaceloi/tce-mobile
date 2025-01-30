@@ -7,12 +7,13 @@ import { NoticiaInfos } from "../types/noticiaType";
 function CardNoticia() {
     return (
 
-
-            <FlatList
+        <View>
+            <FlatList nestedScrollEnabled
                 data={ListaNoticias}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }: { item: NoticiaInfos }) => <ComponenteNoticias noticia={item} />}
             />
+        </View>
 
     );
 }
