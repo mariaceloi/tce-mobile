@@ -9,10 +9,11 @@ import SVGLogoTce from "../assets/SVGLogoTce.svg";
 export default function TelaNoticiasInicial() {
     return (
         <SafeAreaView style={styles.container}>
- 
+
             <ScrollView>
-                <View style={styles.logo}><SVGLogoTce width={110} height={75} /></View>
-                
+                <View style={styles.logo}>
+                    <SVGLogoTce width={110} height={75} />
+                </View>
                 <ImagemDestaque />
                 <BoxUltimasNoticias />
                 <CardNoticia />
