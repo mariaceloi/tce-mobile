@@ -4,7 +4,7 @@ export default function TopBorder() {
   return (
     <View style={styles.container}>
     <Image
-      source={require('C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/assets/imagensNoticiaCompleta/topborder_hd-.png')}
+      source={require('../../assets/imagensNoticiaCompleta/topborder_hd-.png')}
       style={styles.topBorder}
     />
     </View>

@@ -4,7 +4,7 @@ export default function Content() {
   return (
     <View style={styles.content}>
       <Image 
-        source={require('C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/assets/imagensNoticiaCompleta/logosemtitulohd(1).png')}
+        source={require('../../assets/imagensNoticiaCompleta/logosemtitulohd(1).png')}
 
         style={styles.logo}
       />
