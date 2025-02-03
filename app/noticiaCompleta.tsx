@@ -34,7 +34,7 @@ export default function BorderedScreen() {
         <Titulo />
         <Content />
         <Corponotícia
-          imageSource={require('C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/assets/imagensNoticiaCompleta/imagennoticia.png')}
+          imageSource={require('../assets/imagensNoticiaCompleta/imagennoticia.png')}
           text="O Tribunal de Contas do Estado de Mato Grosso do Sul (TCE-MS) deu mais um passo importante para a gestão pública sustentável ao aprovar o Plano de Logística Sustentável (PLS). A decisão, publicada na edição extra do Diário Oficial Eletrônico desta quarta-feira, 8 de janeiro de 2025, tem como objetivo alinhar as práticas administrativas do órgão aos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030.A aprovação do Plano de Logística Sustentável, normatizada pela Instrução Normativa nº 43/2025, marca um esforço do TCE-MS para promover práticas que conciliem eficiência administrativa e sustentabilidade. Entre os objetivos do plano estão a racionalização de gastos e a implementação de procedimentos que respeitem critérios ambientais, sociais, culturais e econômicos."
         />
       </ScrollView>

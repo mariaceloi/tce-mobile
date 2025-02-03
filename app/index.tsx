@@ -5,14 +5,10 @@ import ImagemDestaque from "../components/noticiaInicial/imagemDestaqueNoticia";
 import CardNoticia from "../components/noticiaInicial/cardsNoticia";
 import BoxUltimasNoticias from "../components/noticiaInicial/ultimasNoticias";
 import SVGLogoTce from "../assets/SVGLogoTce.svg";
-import SVGCabecalho from "../assets/SVGCabecalho.svg";
 
 export default function TelaNoticiasInicial() {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.cabecalho}>
-                <SVGCabecalho width={800} height={50} />
-            </View>
             <ScrollView>
 
                 <View style={styles.logo}>
