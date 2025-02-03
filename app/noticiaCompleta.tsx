@@ -1,12 +1,11 @@
-import React from 'react';
 import { ScrollView, StyleSheet, View, Alert, SafeAreaView, StatusBar } from 'react-native';
-import Container from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/Container';
-import Titulo from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/Titulo';
-import TopBorder from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/TopBorder';
-import Content from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/Content';
-import BottomBorder from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/BottomBorder';
-import Corponotícia from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/Corponotícia';
-import Voltar from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/voltar';
+import Container from '../components/noticiaCompleta/Container';
+import Titulo from '../components/noticiaCompleta/Titulo';
+import TopBorder from '../components/noticiaCompleta/TopBorder';
+import Content from '../components/noticiaCompleta/Content';
+import BottomBorder from '../components/noticiaCompleta/BottomBorder';
+import Corponotícia from '../components/noticiaCompleta/Corponotícia';
+import Voltar from '../components/noticiaCompleta/voltar';
 
 
 export default function BorderedScreen() {

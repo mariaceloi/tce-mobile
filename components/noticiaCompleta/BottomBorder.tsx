@@ -1,8 +1,7 @@
-import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import HomeButton from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/homebutton';
-import MenuButton from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/menubutton';
-import UserButton from 'C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/components/noticiaCompleta/userbutton';
+import HomeButton from '../noticiaCompleta/homebutton';
+import MenuButton from '../noticiaCompleta/menubutton';
+import UserButton from '../noticiaCompleta/userbutton';
 
 interface BottomBorderProps {
   onMenuPress: () => void;
