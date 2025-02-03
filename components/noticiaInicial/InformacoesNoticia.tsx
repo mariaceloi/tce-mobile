@@ -1,5 +1,6 @@
 import { View, Image, StyleSheet, Text, Pressable } from "react-native";
-import { NoticiaInfos } from "../../types/noticiaType";
+import  {NoticiaInfos}  from "../../@types/noticiaType";
+
 
 
  type Props = {
