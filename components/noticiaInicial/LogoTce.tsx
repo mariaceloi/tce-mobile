@@ -6,7 +6,7 @@ function LogoTce(){
         
         <View style={styles.box}>
 
-            <Image source={require('../assets/logoTce.png')}
+            <Image source={require('C:/Users/thiagoalves/Desktop/app_principal_TCE/tce-mobile/assets/logoTce.png')}
             resizeMode="cover"
             />
 

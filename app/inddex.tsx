@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, ScrollView, } from "react-native";
-import LogoTce from "../components/LogoTce";
+// import LogoTce from "../components/noticiaInicial/LogoTce";
 import { SafeAreaView } from "react-native-safe-area-context";
-import ImagemDestaque from "../components/imagemDestaqueNoticia";
-import CardNoticia from "../components/cardsNoticia";
-import BoxUltimasNoticias from "../components/ultimasNoticias";
+import ImagemDestaque from "../components/noticiaInicial/imagemDestaqueNoticia";
+import CardNoticia from "../components/noticiaInicial/cardsNoticia";
+import BoxUltimasNoticias from "../components/noticiaInicial/ultimasNoticias";
 import SVGLogoTce from "../assets/SVGLogoTce.svg";
 import SVGCabecalho from "../assets/SVGCabecalho.svg";
 
