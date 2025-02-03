@@ -1,7 +1,8 @@
 import { View, FlatList } from "react-native";
 import ComponenteNoticias from "../../components/noticiaInicial/InformacoesNoticia";
 import { ListaNoticias } from "../../testeData";
-import { NoticiaInfos } from "../../types/noticiaType";
+import { NoticiaInfos } from "../../@types/noticiaType";
+
 
 
 function CardNoticia() {
