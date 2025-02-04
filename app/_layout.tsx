@@ -4,8 +4,9 @@ export default function RootLayout() {
     return (
         <Stack screenOptions={{headerShown: false}}>
             <Stack.Screen name="index"/>
-            <Stack.Screen name="noticiaCompleta"/>
-
+            <Stack.Screen name="noticias/noticiaInical"/>
+            <Stack.Screen name="noticias/noticiaCompleta"/>
+            <Stack.Screen name="diario/diarioScreen"/>
         </Stack>
     );
 }

@@ -20,7 +20,6 @@ export default function Corponotícia({ imageSource, text }: CorponotíciaProps)
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    top: 130,
     padding: 10,
     alignItems: 'center',
     marginTop: 5,

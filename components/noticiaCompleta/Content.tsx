@@ -1,14 +1,10 @@
 
 import { View, Image, StyleSheet } from 'react-native';
-
+import SVGLogoTce from '../../assets/SVGLogoTce.svg';
 export default function Content() {
   return (
     <View style={styles.content}>
-      <Image 
-        source={require('../../assets/imagensNoticiaCompleta/logosemtitulohd(1).png')}
-
-        style={styles.logo}
-      />
+      <SVGLogoTce width={180} height={123} />
     </View>
   );
 }
@@ -17,12 +13,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
-  },
-  logo: {
-    width: 130,
-    height: 59,
-    top: -80,
-    position: 'absolute',
+    alignItems: 'center',
+    top: -105,
   },
 });

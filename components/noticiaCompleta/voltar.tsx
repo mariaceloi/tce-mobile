@@ -1,5 +1,6 @@
 
 import { TouchableOpacity, View, StyleSheet } from 'react-native';
+import {router} from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 interface VoltarProps {
@@ -7,8 +8,12 @@ interface VoltarProps {
 }
 
 export default function Voltar({ onPress }: VoltarProps) {
+
+  const goToHome = () =>{
+    router.navigate('../noticias/noticiaInicial');
+  }
   return (
-    <TouchableOpacity onPress={onPress} style={styles.button}>
+    <TouchableOpacity onPress={goToHome} style={styles.button}>
       <View style={styles.container}>
         <Ionicons name="arrow-back" size={35} color="white" />
       </View>

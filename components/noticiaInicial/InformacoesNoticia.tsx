@@ -1,4 +1,5 @@
 import { View, Image, StyleSheet, Text, Pressable } from "react-native";
+import { router } from "expo-router";
 import  {NoticiaInfos}  from "../../@types/noticiaType";
 
 
@@ -8,8 +9,13 @@ import  {NoticiaInfos}  from "../../@types/noticiaType";
 };
 
 function ComponenteNoticias (props : Props) {
+    
+    const goToNews = () => {
+        router.navigate('../noticias/noticiaCompleta');
+    }
+
     return (
-        <Pressable style={styles.container}>
+        <Pressable style={styles.container} onPress={goToNews}>
             <Image
                 source={{
                     uri: props.noticia.image,
