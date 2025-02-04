@@ -1,35 +1,34 @@
-import { View, Text, StyleSheet, ScrollView, } from "react-native";
-// import LogoTce from "../components/noticiaInicial/LogoTce";
-import { SafeAreaView } from "react-native-safe-area-context";
-import ImagemDestaque from "../components/noticiaInicial/imagemDestaqueNoticia";
-import CardNoticia from "../components/noticiaInicial/cardsNoticia";
-import BoxUltimasNoticias from "../components/noticiaInicial/ultimasNoticias";
-import SVGLogoTce from "../assets/SVGLogoTce.svg";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function TelaNoticiasInicial() {
-    return (
-        <SafeAreaView style={styles.container}>
-
-            <ScrollView>
-                <View style={styles.logo}>
-                    <SVGLogoTce width={110} height={75} />
-                </View>
-                <ImagemDestaque />
-                <BoxUltimasNoticias />
-                <CardNoticia />
-            </ScrollView>
-        </SafeAreaView>
-    );
+export default function Page() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.main}>
+        <Text style={styles.title}>Hello World</Text>
+        <Text style={styles.subtitle}>This is the first page of your app.</Text>
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#F5F5F5',
-        flex: 1,
-        paddingHorizontal: 0,
-    },
-    logo: {
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
+  container: {
+    flex: 1,
+    alignItems: "center",
+    padding: 24,
+  },
+  main: {
+    flex: 1,
+    justifyContent: "center",
+    maxWidth: 960,
+    marginHorizontal: "auto",
+  },
+  title: {
+    fontSize: 64,
+    fontWeight: "bold",
+  },
+  subtitle: {
+    fontSize: 36,
+    color: "#38434D",
+  },
 });

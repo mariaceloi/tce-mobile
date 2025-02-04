@@ -1,7 +1,7 @@
 import { View, StyleSheet } from 'react-native';
-import HomeButton from '../noticiaCompleta/homebutton';
-import MenuButton from '../noticiaCompleta/menubutton';
-import UserButton from '../noticiaCompleta/userbutton';
+import HomeButton from '../../components/noticiaCompleta/homebutton';
+import MenuButton from '../../components/noticiaCompleta/menubutton';
+import UserButton from '../../components/noticiaCompleta/userbutton';
 
 interface BottomBorderProps {
   onMenuPress: () => void;
