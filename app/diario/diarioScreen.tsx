@@ -1,93 +1,86 @@
-import React from "react";
 import { View, Text, ScrollView, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 import DiarioCard from "../../components/diarioComponents/DiarioCard";
-import Topo from "../../components/home/Topo";
-
-import TabBar from "../../components/home/TabBar";
 import BoxDiarioOficial from "../../components/diarioComponents/DiarioOficial";
+import SVGBordaSuperior from "../../assets/SVGBordaSuperior.svg";
 
 export default function DiarioScreen() {
   return (
     <View style={styles.container}>
-        <ScrollView contentContainerStyle={styles.scrollViewContent}>
-
-          <Topo/>
-
-          <View style={styles.searchContainer}>
-            <TextInput
-              placeholder="Palavra-chave"
-              placeholderTextColor="#777"
-              style={styles.searchInput}
-            />
-            <TouchableOpacity style={styles.searchButton} >
-              <Text style={styles.searchButtonText}>BUSCAR</Text>
-            </TouchableOpacity>
-          </View>
-
-          <BoxDiarioOficial/>
-
-            <DiarioCard 
-              date="10"
-              month="NOV"
-              year="2024"
-              title="Comunicado nº 02-2023"
-              description="Atualização do Cadastro dos Jurisdicionados e-CJUR para envio das Prestações de Contas."
-              onPress={() => console.log("Ver detalhes")}
-            />
-
-            <DiarioCard
-                date="05"
-                month="OUT"
-                year="2024"
-                title="Comunicado nº 01-2023"
-                description="Novas diretrizes para a auditoria de contas municipais."
-                onPress={() => console.log("Ver detalhes")}
-            />
-
-            <DiarioCard
-                date="31"
-                month="OUT"
-                year="2025"
-                title="Comunicado nº 01-2025"
-                description="Novas diretrizes para a auditoria de contas municipais."
-                onPress={() => console.log("Ver detalhes")}
-            />
-
-            <DiarioCard
-                date="15"
-                month="OUT"
-                year="2025"
-                title="Comunicado nº 01-2024"
-                description="Novas diretrizes para a auditoria de contas municipais."
-                onPress={() => console.log("Ver detalhes")}
-            />
-
-            <DiarioCard
-                date="15"
-                month="OUT"
-                year="2025"
-                title="Comunicado nº 01-2024"
-                description="Novas diretrizes para a auditoria de contas municipais."
-                onPress={() => console.log("Ver detalhes")}
-            />
-
-            <DiarioCard
-                date="15"
-                month="OUT"
-                year="2025"
-                title="Comunicado nº 01-2024"
-                description="Novas diretrizes para a auditoria de contas municipais."
-                onPress={() => console.log("Ver detalhes")}
-            />
-
-        </ScrollView>
-
-        <View style={styles.fixedTabBar}>
-            <TabBar />
+      
+      <ScrollView contentContainerStyle={styles.scrollViewContent}>
+        <SVGBordaSuperior/>
+        {/* //implementar a logo do TCE sem letras */}
+        <View style={styles.searchContainer}>
+          <TextInput
+            placeholder="Palavra-chave"
+            placeholderTextColor="#777"
+            style={styles.searchInput}
+          />
+          <TouchableOpacity style={styles.searchButton} >
+            <Text style={styles.searchButtonText}>BUSCAR</Text>
+          </TouchableOpacity>
         </View>
 
+        <BoxDiarioOficial />
+
+        <DiarioCard
+          date="10"
+          month="NOV"
+          year="2024"
+          title="Comunicado nº 02-2023"
+          description="Atualização do Cadastro dos Jurisdicionados e-CJUR para envio das Prestações de Contas."
+          onPress={() => console.log("Ver detalhes")}
+        />
+
+        <DiarioCard
+          date="05"
+          month="OUT"
+          year="2024"
+          title="Comunicado nº 01-2023"
+          description="Novas diretrizes para a auditoria de contas municipais."
+          onPress={() => console.log("Ver detalhes")}
+        />
+
+        <DiarioCard
+          date="31"
+          month="OUT"
+          year="2025"
+          title="Comunicado nº 01-2025"
+          description="Novas diretrizes para a auditoria de contas municipais."
+          onPress={() => console.log("Ver detalhes")}
+        />
+
+        <DiarioCard
+          date="15"
+          month="OUT"
+          year="2025"
+          title="Comunicado nº 01-2024"
+          description="Novas diretrizes para a auditoria de contas municipais."
+          onPress={() => console.log("Ver detalhes")}
+        />
+
+        <DiarioCard
+          date="15"
+          month="OUT"
+          year="2025"
+          title="Comunicado nº 01-2024"
+          description="Novas diretrizes para a auditoria de contas municipais."
+          onPress={() => console.log("Ver detalhes")}
+        />
+
+        <DiarioCard
+          date="15"
+          month="OUT"
+          year="2025"
+          title="Comunicado nº 01-2024"
+          description="Novas diretrizes para a auditoria de contas municipais."
+          onPress={() => console.log("Ver detalhes")}
+        />
+
+      </ScrollView>
+
     </View>
-    
+
   );
 }
 
@@ -98,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
   },
   scrollViewContent: {
-      flexGrow: 1,
+    flexGrow: 1,
   },
   title: {
     fontSize: 20,

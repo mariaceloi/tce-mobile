@@ -1,12 +1,13 @@
-import React from 'react';
 import { View, Image, StyleSheet, ScrollView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import ButtonCard from '../components/home/ButtonCard';
 import TabBar from '../components/home/TabBar';
 import { router } from 'expo-router';
+import SVGBordaSuperior from '../assets/SVGBordaSuperior.svg';
+import SVGLogoTce from '../assets/SVGLogoTce.svg';
 
-export default function HomeScreen({ navigation }: any) {
-  
+export default function HomeScreen() {
+
   function navToDiario() {
     router.navigate('./diario/diarioScreen');
   }
@@ -20,48 +21,40 @@ export default function HomeScreen({ navigation }: any) {
 
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
 
-        {/* <View style={styles.box}>
-    
-          <Image source={require('../assets/BordaSuperior.png')}
-            resizeMode="cover"
-          /> */}
-        {/* </View> */}
+        <SVGBordaSuperior />
+        <View style={styles.logoContainer}>
+          <SVGLogoTce />
+        </View>
 
-        {/* <View style={styles.image}>
-    
-          <Image source={require('../assets/tceLogo.png')}
-            resizeMode="cover"
-          />
-        </View> */}
-        
+
         <View style={styles.buttonContainer}>
-          <ButtonCard title="Diário Oficial" onPress={navToDiario}/>
+          <ButtonCard title="Diário Oficial" onPress={navToDiario} />
         </View>
 
         <View style={styles.buttonContainer}>
-          <ButtonCard title="Noticias" onPress={navToNoticia}/>
+          <ButtonCard title="Noticias" onPress={navToNoticia} />
         </View>
 
         <View style={styles.buttonContainer}>
-          <ButtonCard title="Ouvidoria" onPress={navToNoticia}/>
+          <ButtonCard title="Ouvidoria" onPress={navToNoticia} />
         </View>
 
         <View style={styles.buttonContainer}>
-          <ButtonCard title="Legislação" onPress={navToNoticia}/>
+          <ButtonCard title="Legislação" onPress={navToNoticia} />
         </View>
 
         <View style={styles.buttonContainer}>
-          <ButtonCard title="Área do Advogado" onPress={navToNoticia}/>
+          <ButtonCard title="Área do Advogado" onPress={navToNoticia} />
         </View>
 
         <View style={styles.buttonContainer}>
-          <ButtonCard title="Corregedoria" onPress={navToNoticia}/>
+          <ButtonCard title="Corregedoria" onPress={navToNoticia} />
         </View>
 
         <StatusBar style="auto" />
 
       </ScrollView>
-      
+
       <View style={styles.fixedTabBar}>
         <TabBar />
       </View>
@@ -77,26 +70,26 @@ const styles = StyleSheet.create({
   },
   scrollViewContent: {
     flexGrow: 1,
-    paddingBottom: 80, 
+    paddingBottom: 80,
   },
   box: {
-    justifyContent:'center',
+    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5F5F5',
-    
+
     width: '100%',
     height: 51
-},
+  },
   image: {
     width: 100,
     height: 100,
     marginVertical: 5,
     marginTop: 20,
-    alignSelf: 'center', 
+    alignSelf: 'center',
   },
   buttonContainer: {
     marginTop: 20,
-    alignSelf: 'center', 
+    alignSelf: 'center',
   },
   fixedTabBar: {
     position: 'absolute',
@@ -107,6 +100,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     borderTopWidth: 1,
     borderColor: '#ddd',
-    elevation: 5, 
+    elevation: 5,
   },
+  logoContainer: {
+    alignSelf: 'center',
+    alignItems: 'center',
+    width: '100%',
+  }
 });

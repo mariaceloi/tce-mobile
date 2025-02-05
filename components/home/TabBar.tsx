@@ -1,22 +1,8 @@
-import React from 'react';
 import { View, TouchableOpacity, StyleSheet } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
 import { router } from 'expo-router'
 
 export default function TabBar({ }: any) {
-
-  // const navigation = useNavigation();
-
-  // function navToHome() {
-  //     navigation.navigate('Home');
-  // }
-  // function navToDiario() {
-  //     navigation.navigate('Diario');
-  // }
-  // function navToNoticia() {
-  //     navigation.navigate('Noticia' );
-  // }
 
   function navToHome() {
     router.navigate('/');
