@@ -1,15 +1,15 @@
 import { View, Image, StyleSheet, Text, Pressable } from "react-native";
 import { router } from "expo-router";
-import  {NoticiaInfos}  from "../../@types/noticiaType";
+import { NoticiaInfos } from "../../@types/noticiaType";
 
 
 
- type Props = {
+type Props = {
     noticia: NoticiaInfos;
 };
 
-function ComponenteNoticias (props : Props) {
-    
+function ComponenteNoticias(props: Props) {
+
     const goToNews = () => {
         router.navigate('../noticias/noticiaCompleta');
     }

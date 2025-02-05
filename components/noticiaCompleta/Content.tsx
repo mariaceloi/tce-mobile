@@ -1,5 +1,5 @@
 
-import { View, Image, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import SVGLogoTce from '../../assets/SVGLogoTce.svg';
 export default function Content() {
   return (
