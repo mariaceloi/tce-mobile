@@ -3,37 +3,47 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import ImagemDestaque from "../../components/noticiaInicial/imagemDestaqueNoticia";
 import CardNoticia from "../../components/noticiaInicial/cardsNoticia";
 import BoxUltimasNoticias from "../../components/noticiaInicial/ultimasNoticias";
-import SVGLogoTce from "../../assets/SVGLogoTce.svg";
+import SVGBordaSuperior from "../../assets/SVGBordaSuperior.svg";
+import SVGLogoPequena from "../../assets/SVGLogoPequena.svg.svg";
+
 
 export default function TelaNoticiasInicial() {
     return (
-        <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
+        <View style={styles.logoContainer}>
+
+            <SVGBordaSuperior />
+            <SVGLogoPequena />
             
-                <View style={styles.logo}>
-                    <SVGLogoTce width={110} height={75} />
-                </View>
-                <ImagemDestaque />
-                <BoxUltimasNoticias />
-                <CardNoticia />
+        </View>
+
+        <SafeAreaView style={styles.bodyContainer}>
+
+            <ImagemDestaque />
+            <BoxUltimasNoticias />
+            <CardNoticia />
 
         </SafeAreaView>
+    </View>
+            
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F5F5F5',
+        flex: 1,
+        backgroundColor: '#FAFAFA',
+      },
+    bodyContainer: {
+        backgroundColor: '#FAFAFA',
         flex: 1,
         paddingHorizontal: 0,
     },
-    logo: {
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    cabecalho: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 50,
-        width: '100%',
-    }
+    logoContainer: {
+        width: "100%",  
+        alignItems: "center",
+        justifyContent: "center", 
+        flexDirection: "column", 
+        marginBottom: 5, 
+      },
 });
