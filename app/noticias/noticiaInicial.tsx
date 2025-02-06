@@ -4,7 +4,7 @@ import ImagemDestaque from "../../components/noticiaInicial/imagemDestaqueNotici
 import CardNoticia from "../../components/noticiaInicial/cardsNoticia";
 import BoxUltimasNoticias from "../../components/noticiaInicial/ultimasNoticias";
 import SVGBordaSuperior from "../../assets/SVGBordaSuperior.svg";
-import SVGLogoPequena from "../../assets/SVGLogoPequena.svg.svg";
+import SVGLogoPequena from "../../assets/SVGLogoPequena.svg";
 
 
 export default function TelaNoticiasInicial() {
